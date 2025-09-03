@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let account = 114514
+    let out = false
+
+    while (true) {
+      let num1 = +prompt(`
+      请选择您的操作：
+                  1.存钱
+                  2.取钱
+                  3.查看余额
+                  4.退出`)
+      out = false
+      switch (num1) {
+        case 1:
+          account = account + +prompt('请输入存款金额：')
+          break
+        case 2:
+          account = account - +prompt('请输入存款金额：')
+          break
+        case 3:
+          alert(`您的账户余额是${account}元`)
+          break
+        case 4:
+          out = true
+          break
+      }
+      if (out === true) {
+        break
+      }
+    }
+  </script>
+</body>
+
+</html>

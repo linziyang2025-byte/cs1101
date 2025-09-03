@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let uname = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    let num2 = +prompt('请输入想选出个数')
+    for (let i = 1; i <= num2; i++) {
+      let num = Math.floor(Math.random() * uname.length)
+      document.write(uname[num])
+      uname.splice(num, 1)
+    }
+
+    document.write()
+  </script>
+</body>
+
+</html>

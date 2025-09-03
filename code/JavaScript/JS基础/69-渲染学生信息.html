@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let students = [
+      { name: 'mh', age: 19, gender: '女', hometown: '河北' },
+      { name: 'jy', age: 19, gender: '女', hometown: '天津' },
+      { name: 'qb', age: 19, gender: '女', hometown: '四海为家' },
+      { name: 'kk', age: 19, gender: '女', hometown: '未知' },
+
+    ]
+    for (let i = 0; i < students.length; i++) {
+      console.log(students[i].name)
+      console.log(students[i].hometown);
+
+      for (let k in students[i]) {
+        console.log(students[i][k])
+      }
+      //如果要打印表格的话
+      for (let i = 0; students.length; i++) {
+        document.write(`
+          <tr>
+            <td>${i + 1}</td>
+            <td>${students[i].name}</td>
+            <td>${students[i] - age}</td>
+            <td>${students[i] - gender}</td>
+            <td>${students[i].hometown}</td>
+          <tr>
+          `)
+      }
+    }
+  </script>
+</body>
+
+</html>

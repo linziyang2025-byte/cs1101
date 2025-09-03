@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let orinum = +prompt('请输入你想让对方猜的数字：')
+    while (true) {
+      let guessnum = +prompt('请输入你想猜测的数字：')
+      if (guessnum < orinum) {
+        alert('小了，fvv')
+      } else if (guessnum > orinum) {
+        alert('大了，fvv')
+      } else if (guessnum = orinum) {
+        alert('纯狗运，fvv')
+        break
+      }
+
+
+      //也可以是 
+      // function getRandom(x, y) {
+      // return Math.floor(Math.random() * (y - x)) + x
+      // }
+      //let num = getRandom( , )
+      //let flag = true
+      //
+    }
+  </script>
+</body>
+
+</html>
